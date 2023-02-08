@@ -358,7 +358,7 @@ flex-basis: calc((100% - (24px * 2)) / 3);
 
 .team{
 display: flex;
-flex-wrap: wrap;
+flex-wrap: nowrap;
 gap: 24px;
 }
 
@@ -396,38 +396,38 @@ border-radius: 0px 0px 4px 4px;
     margin-bottom: 8px;
 }
 
-
-
-
-
-/* <svg class="team-icons" width="16" height="16">
-<use href="./images/icons.svg#icon-instagram" viewBox="0 0 32 32">
-   "></use>
-  </svg>
-*/
   .social-list{
     display: flex;
+    
     justify-content: center;
     gap: 24px;
-    padding: 0px 16px;
   }
 
   .social{
-    background-color:var(--background-blue) ;
-border-radius: 50%;
+  
   }
   .social-link{
     display: flex;
-    justify-items: center;
-  }
- .social-icons{
+    align-items: center;
+    justify-content: center;
     width: 40px;
     height: 40px;
+    background-color: var(--ctas-focusedActive-statesLink);
+  border-radius: 50%; 
+  }
+ .social-icons{
+    display: flex;
+    fill: var(--white);
  }
+/*
+.social-link:hover .social-icons,
+.social-link:hover .social-icons{
+    fill: var(--ctas);}*/
 
-
-
-
+.social-link:hover,
+.social-link:focus{
+     background-color: var(--ctas);
+}
 
 /* CUSTOMERS */
 .cust-sec{
