@@ -118,7 +118,15 @@ img{
 
 /* Header */
 .header{ 
+    background: var(--white);
   border-bottom: 1px solid var(--accent);
+  box-shadow: 0px 2px 1px 
+  rgba(46, 47, 66, 0.08),
+   0px 1px 1px
+  rgba(46, 47, 66, 0.16),
+    0px 1px 6px 
+   rgba(46, 47, 66, 0.08);
+
 }
 .header-conteiner{
     display: flex;
@@ -228,8 +236,17 @@ img{
 
  /* hero section */
 .hero{
-    text-align: center;
-    background:var(--hero-background);
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    background: var(--hero-background);
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7), 
+        rgba(46, 47, 66, 0.7)), 
+        url(../images/hero/people-office.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     padding-top: 188px;
     padding-bottom: 188px;
  }
@@ -237,6 +254,7 @@ img{
     font-family: 'Roboto', sans-serif;
     font-size: 56px;
     line-height: 1.07;
+    text-align: center;
     margin-right: auto;
     margin-left: auto;
     width: 496px;
@@ -249,17 +267,19 @@ img{
 .modal-btb{
     padding: 15px 31px;
     border-radius:var(--radius);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
-    display: flex;
-    align-items: center;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
     letter-spacing: 0.04em;
     color:var(--white);
     background:var(--ctas-focusedActive-statesLink);
     cursor: pointer;
-    margin: auto;
+   
     border: none;
  }
  .modal-btb:hover,
@@ -284,9 +304,11 @@ gap: 24px;
 
 .future{
   flex-basis: calc((100% - (24px * 3)) / 4);
-    
  }
 
+ .future-foto{
+  
+ }
 .quality{
     margin-bottom: 8px;
 
@@ -329,10 +351,6 @@ flex-basis: calc((100% - (24px * 2)) / 3);
      
 }
 
-.our-div{
-
-    
-}
 .our{
   margin-bottom: 72px;
  }
@@ -348,6 +366,14 @@ gap: 24px;
     background:var(--background-white);
     border: 1px solid var(--accent);
     border-top: none;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 6px 
+  rgba(46, 47, 66, 0.08), 
+    0px 1px 1px 
+  rgba(46, 47, 66, 0.16),
+    0px 2px 1px
+  rgba(46, 47, 66, 0.08);
+border-radius: 0px 0px 4px 4px;
  }
 
 
@@ -366,8 +392,61 @@ gap: 24px;
 
 .position{
     text-align: center;
-   
+    margin-bottom: 8px;
+}
 
+
+
+
+
+/* <svg class="team-icons" width="16" height="16">
+<use href="./images/icons.svg#icon-instagram" viewBox="0 0 32 32">
+   "></use>
+  </svg>
+*/
+  .social-list{
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    padding: 0px 16px;
+  }
+
+  .social{
+    background-color:var(--background-blue) ;
+border-radius: 50%;
+  }
+  .social-link{
+    display: flex;
+    justify-items: center;
+  }
+ .social-icons{
+    width: 40px;
+    height: 40px;
+ }
+
+
+
+
+
+/* CUSTOMERS */
+.cust-sec{
+    padding-top: 130px;
+}
+
+.t-cust{
+    margin-bottom: 72px;
+    
+}
+
+.custumer{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 24px;
+}
+
+.cust-list{
+    flex-basis: calc((100% - (24px *5)) / 6);
 }
 
 /* footer */
@@ -469,8 +548,10 @@ flex-basis: calc((100% - (24px * 2)) / 3);
 
 .portfolio-text{
     border: 1px solid var(--accent);
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
     border-top: none;
     padding: 32px 16px;
+    cursor: pointer;
     
 }
 
